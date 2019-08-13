@@ -1,0 +1,9 @@
+<h1>List all your tasks </h1>
+
+
+<% @tasks.each do |task| %>
+<p><%= check_box("tag", tag.title, {completed: task.completed}) %>
+<%= link_to task.title, task_path(task) %> </p>
+
+<% end %>
+<%= link_to "Créer une nouvelle tâche", create_path %>

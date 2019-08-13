@@ -1,0 +1,20 @@
+<h1><%=@task.title%></h1>
+<p>
+<%=@task.details%>
+
+</p>
+<p>
+<%= link_to "Back to the list", tasks_path %>
+
+</p>
+
+<p>
+<%= link_to "Edit your task", update_path %>
+
+</p>
+
+
+<p>
+<%= link_to "Delete your task", delete_path %>
+
+</p>
